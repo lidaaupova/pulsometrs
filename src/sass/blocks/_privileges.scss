@@ -1,0 +1,53 @@
+.privileges {
+    padding: 69px 0 78px;
+    min-height: 470px;
+    background-color: #f6f6f6;
+    &__wrapper {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__descr {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 1.5s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-top: 38px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+
+    &__text {
+        margin-top: 25px;
+        text-align: center;
+        width: 240px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #0d0d0d;
+        a {
+            text-decoration: underline;
+            color: #ff0000;
+            transition: 0.5s all;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+}
